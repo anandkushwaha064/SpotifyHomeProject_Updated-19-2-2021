@@ -33,7 +33,7 @@ public class SpotifyAllClick extends UtilClasses {
 		System.out.println("footerspotify : "+elements.size());
 		Iterator<WebElement> iterator = elements.iterator();
 		
-		scrollDown(2000);
+		scrollDown(4000);
 		while (iterator.hasNext()) {
 			try {
 				web = iterator.next();
