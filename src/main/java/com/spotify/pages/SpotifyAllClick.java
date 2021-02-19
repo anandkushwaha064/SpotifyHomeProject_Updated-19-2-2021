@@ -8,6 +8,7 @@ import com.spotify.EnvironmentConstant.Props;
 import com.spotify.util.SnapShot;
 import com.spotify.util.UtilClasses;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 
 import java.util.Iterator;
@@ -36,9 +37,9 @@ public class SpotifyAllClick extends UtilClasses {
 				web = iterator.next();
 				controlClick(web);
 				wait(3000);
-				takeScreenShot("");
+				Allure.addAttachment("Clicking footer", "");
 			} catch (Exception e) {
-				System.out.println(e.getLocalizedMessage());
+//				System.out.println(e.getLocalizedMessage());
 			}
 		}
 
