@@ -37,7 +37,6 @@ public class SpotifyFooter {
 			actions.moveToElement(element).perform();
 		}
 		ut.click(prop.getProperty("about"));
-
 		driver.navigate().back();
 	}
 }

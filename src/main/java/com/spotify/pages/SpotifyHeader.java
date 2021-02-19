@@ -23,7 +23,6 @@ public class SpotifyHeader {
 		UtilClasses ut = new UtilClasses(driver);
 		ut.wait(5000);
 		driver.navigate().to(Props.siteurl);
-
 		ut.setProps(prop, Props.headerLocators);
 		ut.wait(5000);
 		List<WebElement> listOfHeaderElements = ut.getWebElements(prop.getProperty("header"));
