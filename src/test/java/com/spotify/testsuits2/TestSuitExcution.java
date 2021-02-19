@@ -24,8 +24,9 @@ public class TestSuitExcution {
 	public Object[][] testData() {
 		int test_start = 2;
 		int test_end = 12;
-		Object[][] tests = new Object[test_end - test_start + 1][1];
-		for (int i = test_start; i <= test_end; i++) {
+		int totaltests = test_end - test_start + 1;
+		Object[][] tests = new Object[totaltests][1];
+		for (int i = 0; i <= totaltests; i++) {
 			tests[i][0] = i;
 		}
 		return tests;
