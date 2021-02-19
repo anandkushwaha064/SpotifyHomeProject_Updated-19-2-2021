@@ -48,12 +48,10 @@ public class Login {
 			e.printStackTrace();
 			System.out.println(e.getLocalizedMessage());
 		}
-		boolean islogedin = "Account overview - Spotify".equals(driver.getTitle());
-		// System.out.println(String.valueOf(islogedin).equalsIgnoreCase((String)testdata.get("expectedresult")));
-
+		Boolean islogedin = "Account overview - Spotify".equals(driver.getTitle());
 		Allure.addAttachment("Actaual : ", String.valueOf(islogedin));
-		Allure.addAttachment("Expected : ", (String) testdata.get("expectedresult"));
+		Allure.addAttachment("Expected : ", String.valueOf(testdata.get("expectedresult")));
 		ut.takeScreenShot("After Clicking on Login Button");
-		Assert.assertTrue(String.valueOf(islogedin).equalsIgnoreCase((String) testdata.get("expectedresult")));
+		Assert.assertTrue(testdata.get("expectedresult").equals(islogedin));
 	}
 }
