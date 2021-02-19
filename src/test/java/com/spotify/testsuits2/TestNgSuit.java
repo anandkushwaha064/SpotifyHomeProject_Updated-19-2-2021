@@ -12,7 +12,6 @@ import io.qameta.allure.Description;
 
 public class TestNgSuit {
 	private WebDriver driver = null;
-	private SnapShot takesnapshort = null;
 	private BrowserUtil browserUtil = new BrowserUtil();
 	private String browsername = null;
 	private SpotifyAllClick footer;
@@ -44,13 +43,12 @@ public class TestNgSuit {
 	@Description("Closing Browser")
 	public void closeBrowser() {
 		wait(5000);
-		takesnapshort.saveFile();
 		driver.quit();
 	}
 	
 	public void wait(int time) {
 		try {
-			Thread.sleep(time);
+		Thread.sleep(time);
 		} catch (Exception e) {
 		}
 	}
