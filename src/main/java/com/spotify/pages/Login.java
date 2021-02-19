@@ -25,6 +25,7 @@ public class Login {
 
 	@Step("Login Excetion")
 	public void doLogin(HashMap<String, Object> testdata) {
+		Allure.addAttachment("Test Case id", (String) testdata.get("testcaseid"));
 		UtilClasses ut = new UtilClasses(driver);
 		try {
 			ut.setProps(props, Props.loginlocater);
@@ -48,9 +49,12 @@ public class Login {
 			System.out.println(e.getLocalizedMessage());
 		}
 		Boolean islogedin = "Account overview - Spotify".equals(driver.getTitle());
+		Allure.addAttachment("Actaual title: ",driver.getTitle());
+		Allure.addAttachment("Expected title: ", "Account overview - Spotify");
+		
 		Allure.addAttachment("Actaual : ", String.valueOf(islogedin));
 		Allure.addAttachment("Expected : ", String.valueOf(testdata.get("expectedresult")));
 		ut.takeScreenShot("After Clicking on Login Button");
-		Assert.assertTrue(testdata.get("expectedresult").equals(islogedin));
+		Assert.assertTrue(!testdata.get("expectedresult").equals(islogedin));
 	}
 }
