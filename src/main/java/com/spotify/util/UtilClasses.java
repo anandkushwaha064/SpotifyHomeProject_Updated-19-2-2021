@@ -164,7 +164,7 @@ public class UtilClasses {
 
 	public boolean sendValue(String locater, String data) {
 		try {
-			driver.findElement(By.xpath(locater)).sendKeys(data);
+// 			driver.findElement(By.xpath(locater)).sendKeys(data);
 			getWebElement(locater).sendKeys(data);
 			return true;
 		} catch (Exception e) {
