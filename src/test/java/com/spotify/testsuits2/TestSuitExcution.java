@@ -20,7 +20,7 @@ public class TestSuitExcution {
 
 	private ExcelOperation excelOperation = new ExcelOperation(Props.credentialFile);
 
-	@DataProvider(name = "testData")
+	@DataProvider(name = "testData",parallel = true)
 	public Object[][] testData() {
 		int test_start = 1;
 		int test_end = 2;
