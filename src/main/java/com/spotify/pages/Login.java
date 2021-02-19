@@ -19,8 +19,7 @@ public class Login {
 	SnapShot takesnapshort = null;
 	String st = "Anand";
 
-	public Login(WebDriver driver, SnapShot takesnapshort) {
-		this.takesnapshort = takesnapshort;
+	public Login(WebDriver driver) {
 		this.driver = driver;
 	}
 

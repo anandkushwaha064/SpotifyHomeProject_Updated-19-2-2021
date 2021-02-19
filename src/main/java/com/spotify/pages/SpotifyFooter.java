@@ -15,12 +15,11 @@ import java.util.Properties;
 public class SpotifyFooter {
 	private WebDriver driver = null;
 	private Properties prop = new Properties();
-	private SnapShot takesnapshort = null;
 	private List<WebElement> elements;
 
-	public SpotifyFooter(WebDriver driver, SnapShot takesnapshort) {
+	public SpotifyFooter(WebDriver driver) {
 		this.driver = driver;
-		this.takesnapshort = takesnapshort;
+
 	}
 
 	public void handleFooter() {
@@ -38,7 +37,7 @@ public class SpotifyFooter {
 			actions.moveToElement(element).perform();
 		}
 		ut.click(prop.getProperty("about"));
-		takesnapshort.takeScreenShort("Screen sort of First page of Screen");
+
 		driver.navigate().back();
 	}
 }

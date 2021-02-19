@@ -26,8 +26,8 @@ public class UtilClasses {
 
 	public UtilClasses(WebDriver driver) {
 		this.driver = driver;
-// 		if (driver != null)
-// 			System.out.println("Util Driver");
+		if (driver != null)
+			System.out.println("Util Driver");
 	}
 
 	public void setProps(Properties prop, String filepath) {

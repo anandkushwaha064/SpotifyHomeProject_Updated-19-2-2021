@@ -29,12 +29,9 @@ public class TestNgSuit {
 		if (driver == null)
 			System.exit(0);
 		wait(5000);
-		takesnapshort = new SnapShot(driver);
-		takesnapshort.openWordFile("invaild path", null);
-		takesnapshort.takeScreenShort("First Page");
-		
-		footer = new SpotifyAllClick(driver, takesnapshort);
-		login = new Login(driver, takesnapshort);
+
+		footer = new SpotifyAllClick(driver);
+		login = new Login(driver);
 	}
 
 	@Description("Starting TestCase")

@@ -17,13 +17,11 @@ import java.util.Properties;
 public class SpotifyAllClick extends UtilClasses {
 	private WebDriver driver = null;
 	private Properties prop = new Properties();
-	private SnapShot takesnapshort = null;
 	public List<WebElement> elements;
 
-	public SpotifyAllClick(WebDriver driver, SnapShot takesnapshort) {
+	public SpotifyAllClick(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
-		this.takesnapshort = takesnapshort;
 	}
 
 	@Step("Footer exection")
@@ -39,7 +37,6 @@ public class SpotifyAllClick extends UtilClasses {
 				controlClick(web);
 				wait(3000);
 				takeScreenShot("");
-				handelTabSnapShot(takesnapshort, 2000);
 			} catch (Exception e) {
 				System.out.println(e.getLocalizedMessage());
 			}
