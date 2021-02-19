@@ -30,6 +30,8 @@ public class SpotifyAllClick extends UtilClasses {
 		setProps(prop, Props.SpotifyFooterLocaters);
 		WebElement web;
 		elements = driver.findElements(By.xpath(prop.getProperty("footerspotify")));
+		System.out.println("footerspotify : "+elements.size());
+		
 		Iterator<WebElement> iterator = elements.iterator();
 		scrollDown(2000);
 		while (iterator.hasNext()) {

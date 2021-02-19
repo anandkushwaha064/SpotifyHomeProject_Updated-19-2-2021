@@ -26,8 +26,6 @@ public class UtilClasses {
 
 	public UtilClasses(WebDriver driver) {
 		this.driver = driver;
-		if (driver != null)
-			System.out.println("Util Driver");
 	}
 
 	public void setProps(Properties prop, String filepath) {
@@ -93,7 +91,6 @@ public class UtilClasses {
 			if (i > 3)
 				break;
 			wait(500);
-			System.out.println(i);
 		}
 		return data;// return first Row
 	}
@@ -112,7 +109,6 @@ public class UtilClasses {
 			if (i > 5)
 				break;
 			wait(500);
-			System.out.println(i);
 		}
 		return data;// return first Row
 	}
