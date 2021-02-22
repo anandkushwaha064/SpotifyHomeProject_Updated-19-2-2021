@@ -2,6 +2,8 @@ package com.spotify.util;
 
 import java.net.URL;
 
+import javax.sql.rowset.spi.TransactionalWriter;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -10,7 +12,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.spotify.EnvironmentConstant.Props;
-
 
 public class BrowserUtil {
 
@@ -44,21 +45,22 @@ public class BrowserUtil {
 				driver = new RemoteWebDriver(new URL(Props.huburl), cap);
 			} else if (BrowserName.equals("firefox")) {
 				DesiredCapabilities cap = DesiredCapabilities.firefox();
-				
+
 				driver = new RemoteWebDriver(new URL(Props.huburl), cap);
 			} else if (BrowserName.equals("edge")) {
 				DesiredCapabilities cap = DesiredCapabilities.edge();
-				
+
 				driver = new RemoteWebDriver(new URL(Props.huburl), cap);
 			} else {
 				System.out.println("Options :\"" + BrowserName + "\" Dose not exist");
 			}
-
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw new RuntimeException("Error occured while creating the New web driver instance",e);
 		}
+		DriverManager.setDriver(driver);
 		driver.manage().window().maximize();
 		driver.navigate().to(Props.siteurl);
 		return driver;
 	}
+
 }

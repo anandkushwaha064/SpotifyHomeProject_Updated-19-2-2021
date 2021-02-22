@@ -101,9 +101,7 @@ public class UtilClasses {
 		while (data == null) {
 			try {
 				data = driver.findElement(By.xpath(xpath));
-
 			} catch (Exception e) {
-				System.out.println();
 			}
 			i++;
 			if (i > 5)

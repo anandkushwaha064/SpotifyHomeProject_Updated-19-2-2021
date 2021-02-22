@@ -5,7 +5,6 @@ public class Props {  //Locater
 	public static final String huburl = "http://3.140.223.144:4444/wd/hub";
 // 	http://3.140.223.144:4444/
 //	http:///
-
 	
 	public static String loginlink = "//li/a[text()=\"Log in\"]";
 	
