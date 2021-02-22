@@ -39,7 +39,7 @@ public class SpotifyAllClick extends UtilClasses {
 				web = iterator.next();
 				hover(web);
 				wait(3000);
-				Allure.addAttachment("Clicking footer", "");
+				takeScreenShot("Clicking footer");
 			} catch (Exception e) {
 //				System.out.println(e.getLocalizedMessage());
 			}
