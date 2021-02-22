@@ -31,7 +31,7 @@ public class TestNgSuit {
 
 	@Description("Starting TestCase")
 	public void runTest(HashMap<String,Object> testdata) {
-		Allure.addAttachment("RunTest Method", "");
+		Allure.addAttachment("RunTest Method", (String) testdata.get("testcaseid"));
 		login.doLogin(testdata);
 		wait(5000);
 		footer.handleFooter();
