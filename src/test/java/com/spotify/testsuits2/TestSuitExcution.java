@@ -23,7 +23,7 @@ public class TestSuitExcution {
 	@DataProvider(name = "testData",parallel = true)
 	public Object[][] testData() {
 		int test_start = 5;
-		int test_end = 10;
+		int test_end = 15;
 		int totaltests = test_end - test_start + 1;
 		Object[][] tests = new Object[totaltests][1];
 		for (int i = 0; i <totaltests; i++) {
