@@ -33,7 +33,7 @@ public class Login {
 			ut.click(props.getProperty("loginlink"));
 			Allure.addAttachment("Login Link Clicked", "");
 			ut.takeScreenShot("First Page Before Login");
-			ut.iwait(3000);
+			ut.iwait(5000);
 			ut.sendValue(props.getProperty("usertextbox"), (String) testdata.get("userid"));
 			Allure.addAttachment("Userid filled", (String) testdata.get("userid"));
 			ut.sendValue(props.getProperty("password"), (String) testdata.get("password"));
