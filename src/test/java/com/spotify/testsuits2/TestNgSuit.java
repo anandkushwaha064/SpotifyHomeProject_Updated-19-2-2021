@@ -23,7 +23,7 @@ public class TestNgSuit {
 
 	@Description("Initlizing remote web driver")
 	public void setPropsForGrid() {
-		driver = browserUtil.getRemoteDriver(this.browsername);
+		driver = browserUtil.getHtmlUnitBrowser("chrome");
 		wait(5000);
 		footer = new SpotifyAllClick(driver);
 		login = new Login(driver);

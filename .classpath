@@ -22,5 +22,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/media/anand/Progambackup/Selenium/SpotifyHomeProject_Updated-19-2-2021/src/lib/htmlunit-driver-2.47.1.jar"/>
+	<classpathentry kind="lib" path="/media/anand/Progambackup/Selenium/SpotifyHomeProject_Updated-19-2-2021/src/lib/htmlunit-driver-2.47.1-jar-with-dependencies.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

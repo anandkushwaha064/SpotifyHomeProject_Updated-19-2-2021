@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-07T18:40:05Z" name="Spotify Login Test Suite" finished-at="2021-03-07T18:43:06Z" duration-ms="180493">
+    <groups>
+    </groups>
+    <test started-at="2021-03-07T18:40:05Z" name="Check Login" finished-at="2021-03-07T18:43:06Z" duration-ms="180493">
+      <class name="com.spotify.testsuits2.TestSuitExecution">
+        <test-method signature="test(int)[pri:0, instance:com.spotify.testsuits2.TestSuitExecution@2cbb3d47]" started-at="2021-03-08T00:10:05Z" name="test" data-provider="testData" finished-at="2021-03-08T00:11:38Z" duration-ms="92507" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.UnsupportedOperationException">
+            <message>
+              <![CDATA[Javascript is not enabled for this HtmlUnitDriver instance]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.UnsupportedOperationException: Javascript is not enabled for this HtmlUnitDriver instance
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.getPageToInjectScriptInto(HtmlUnitDriver.java:947)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.executeScript(HtmlUnitDriver.java:887)
+	at com.spotify.util.UtilClasses.scrollDown(UtilClasses.java:219)
+	at com.spotify.pages.SpotifyAllClick.handleFooter(SpotifyAllClick.java:36)
+	at com.spotify.testsuits2.TestNgSuit.runTest(TestNgSuit.java:37)
+	at com.spotify.testsuits2.TestSuitExecution.test(TestSuitExecution.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.spotify.testNgRunner.TestNGMainClass.main(TestNGMainClass.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.UnsupportedOperationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.spotify.testsuits2.TestSuitExecution@2cbb3d47]" started-at="2021-03-08T00:11:38Z" name="afterTest" finished-at="2021-03-08T00:11:38Z" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method signature="test(int)[pri:0, instance:com.spotify.testsuits2.TestSuitExecution@2cbb3d47]" started-at="2021-03-08T00:11:38Z" name="test" data-provider="testData" finished-at="2021-03-08T00:13:06Z" duration-ms="87744" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.UnsupportedOperationException">
+            <message>
+              <![CDATA[Javascript is not enabled for this HtmlUnitDriver instance]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.UnsupportedOperationException: Javascript is not enabled for this HtmlUnitDriver instance
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.getPageToInjectScriptInto(HtmlUnitDriver.java:947)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.executeScript(HtmlUnitDriver.java:887)
+	at com.spotify.util.UtilClasses.scrollDown(UtilClasses.java:219)
+	at com.spotify.pages.SpotifyAllClick.handleFooter(SpotifyAllClick.java:36)
+	at com.spotify.testsuits2.TestNgSuit.runTest(TestNgSuit.java:37)
+	at com.spotify.testsuits2.TestSuitExecution.test(TestSuitExecution.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.spotify.testNgRunner.TestNGMainClass.main(TestNGMainClass.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.UnsupportedOperationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.spotify.testsuits2.TestSuitExecution@2cbb3d47]" started-at="2021-03-08T00:13:06Z" name="afterTest" finished-at="2021-03-08T00:13:06Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.spotify.testsuits2.TestSuitExecution -->
+    </test> <!-- Check Login -->
+  </suite> <!-- Spotify Login Test Suite -->
+</testng-results>

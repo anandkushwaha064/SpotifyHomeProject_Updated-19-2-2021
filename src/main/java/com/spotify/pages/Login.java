@@ -3,6 +3,7 @@ package com.spotify.pages;
 import java.util.HashMap;
 import java.util.Properties;
 
+import com.google.common.io.ByteSource;
 import org.openqa.selenium.WebDriver;
 
 import com.spotify.EnvironmentConstant.Props;
@@ -27,6 +28,7 @@ public class Login {
 	public void doLogin(HashMap<String, Object> testdata) {
 		Allure.addAttachment("Test Case id", (String) testdata.get("testcaseid"));
 		UtilClasses ut = new UtilClasses(driver);
+		System.out.println(driver.getTitle());
 		try {
 			ut.setProps(props, Props.loginlocater);
 			ut.wait(500);

@@ -4,7 +4,7 @@
 <suite name="Suite" parallel="tests" data-provider-thread-count="1" >
 	<test name="Test1" >
 	     <classes>
-	         <class name="com.spotify.testsuits2.TestSuitExcution"/>
+	         <class name="com.spotify.testsuits2.TestSuitExecution"/>
 	     </classes>
 	</test>
 

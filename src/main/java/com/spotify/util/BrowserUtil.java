@@ -4,10 +4,12 @@ import java.net.URL;
 
 import javax.sql.rowset.spi.TransactionalWriter;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -27,7 +29,8 @@ public class BrowserUtil {
 		} else if (BrowserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", Props.eageDriver);
 			driver = new EdgeDriver();
-		} else {
+		}
+		else {
 			System.out.println("Options :\"" + BrowserName + "\" Dose not exist");
 		}
 
@@ -63,4 +66,17 @@ public class BrowserUtil {
 		return driver;
 	}
 
+	public WebDriver getHtmlUnitBrowser(String BrowserName) {
+		WebDriver driver = null;
+		if (BrowserName.equals("chrome")) {
+			driver = new HtmlUnitDriver(BrowserVersion.CHROME);
+		} else if (BrowserName.equals("firefox")) {
+			driver = new HtmlUnitDriver();
+		} else {
+			driver = new HtmlUnitDriver(BrowserVersion.getDefault());
+		}
+		driver.manage().window().maximize();
+		driver.navigate().to(Props.siteurl);
+		return driver;
+	}
 }
